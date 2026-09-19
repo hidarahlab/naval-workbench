@@ -11,7 +11,10 @@ import sys
 
 import FreeCAD
 import FreeCADGui
-from PySide2 import QtWidgets
+try:
+    from PySide6 import QtWidgets
+except ImportError:
+    from PySide2 import QtWidgets
 
 # Tambahkan root workbench ke sys.path
 try:

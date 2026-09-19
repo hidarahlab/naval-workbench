@@ -13,7 +13,10 @@ import sys
 
 import FreeCAD
 import FreeCADGui
-from PySide2 import QtWidgets, QtCore
+try:
+    from PySide6 import QtWidgets, QtCore
+except ImportError:
+    from PySide2 import QtWidgets, QtCore
 
 try:
     _WB_DIR = _WB_DIR
@@ -208,7 +211,8 @@ class HydrostaticsCommand:
             t_max   = t_max,
             parent  = FreeCADGui.getMainWindow(),
         )
-        if dlg.exec_() != QtWidgets.QDialog.Accepted:
+        accepted = QtWidgets.QDialog.DialogCode.Accepted if hasattr(QtWidgets.QDialog, "DialogCode") else QtWidgets.QDialog.Accepted
+        if dlg.exec() != accepted:
             return
 
         rho    = dlg.rho
