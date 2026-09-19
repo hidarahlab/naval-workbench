@@ -14,7 +14,11 @@ import FreeCADGui
 from PySide2 import QtWidgets
 
 # Tambahkan root workbench ke sys.path
-_WB_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+try:
+    _WB_DIR = _WB_DIR
+except NameError:
+    import FreeCAD as _FC
+    _WB_DIR = os.path.join(_FC.getUserAppDataDir(), "Mod", "NavalWorkbench")
 if _WB_DIR not in sys.path:
     sys.path.insert(0, _WB_DIR)
 
@@ -65,7 +69,7 @@ class NavalHullViewObject:
 
     def getIcon(self):
         icon = os.path.join(
-            os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+            _WB_DIR,
             "icons", "naval_wb.svg"
         )
         return icon
@@ -102,7 +106,7 @@ class ImportOffsetsCommand:
 
     def GetResources(self):
         icon = os.path.join(
-            os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+            _WB_DIR,
             "icons", "naval_wb.svg"
         )
         return {
