@@ -1,0 +1,16 @@
+# name=Kapal Ikan 24m
+# LPP=24.0
+# LWL=24.8
+# B=6.0
+# T=2.5
+# Kapal ikan ukuran sedang, bentuk lambung V-shape
+# Tipikal kapal nelayan Indonesia ukuran 30 GT
+# Cb rencana ~ 0.52, penampang midship lebih runcing
+# Satuan: setengah lebar (half-breadth) dalam meter
+waterline,AP,1,2,3,4,midship,6,7,8,9,FP
+0.0,0.00,0.20,0.50,0.80,1.20,1.50,1.40,1.00,0.50,0.10,0.00
+0.5,0.00,0.60,1.20,1.80,2.30,2.60,2.50,2.00,1.20,0.40,0.00
+1.0,0.10,1.00,1.80,2.40,2.70,2.90,2.80,2.40,1.60,0.70,0.00
+1.5,0.30,1.40,2.20,2.70,2.90,3.00,2.95,2.60,1.90,1.00,0.00
+2.0,0.60,1.80,2.50,2.85,2.98,3.00,2.98,2.80,2.20,1.30,0.05
+2.5,1.00,2.10,2.70,2.90,3.00,3.00,3.00,2.90,2.40,1.60,0.10
