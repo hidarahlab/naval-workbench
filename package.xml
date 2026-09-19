@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
+  <name>NavalWorkbench</name>
+  <description>Workbench perancangan kapal untuk FreeCAD — perhitungan hidrostatik, impor tabel offset, dan kurva stabilitas. Ditujukan untuk mahasiswa, profesional, dan peneliti perkapalan.</description>
+  <version>0.1.0</version>
+  <date>2026-09-20</date>
+  <maintainer email="hidarahlab@gmail.com">Rahmad Hidayat</maintainer>
+  <license>LGPL-2.1</license>
+  <url type="repository">https://github.com/hidarahlab/naval-workbench</url>
+  <url type="bugtracker">https://github.com/hidarahlab/naval-workbench/issues</url>
+  <content>
+    <workbench>NavalWorkbench</workbench>
+  </content>
+  <freecadmin>0.21</freecadmin>
+</package>
