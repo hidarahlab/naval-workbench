@@ -1,9 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <path d="M8 40 L56 40 L48 52 L16 52 Z" fill="#1a5276" stroke="#2980b9" stroke-width="2"/>
-  <rect x="16" y="30" width="32" height="10" fill="#2980b9" stroke="#1a5276" stroke-width="1.5"/>
-  <rect x="24" y="18" width="16" height="12" fill="#3498db" stroke="#1a5276" stroke-width="1.5"/>
-  <rect x="30" y="10" width="6" height="10" fill="#e74c3c" stroke="#c0392b" stroke-width="1"/>
-  <circle cx="33" cy="8" r="3" fill="#95a5a6" opacity="0.6"/>
-  <path d="M4 52 Q14 48 24 52 Q34 56 44 52 Q54 48 62 52" fill="none" stroke="#2980b9" stroke-width="2"/>
+  <!-- Air/water bubbles dekoratif -->
+  <circle cx="6"  cy="46" r="2.5" fill="#38BDF8" opacity="0.35"/>
+  <circle cx="58" cy="43" r="2"   fill="#38BDF8" opacity="0.25"/>
+  <ellipse cx="32" cy="57" rx="26" ry="5" fill="#7DD3FC" opacity="0.35"/>
+
+  <!-- ===== HULL (tampak samping, haluan lancip ke kanan) ===== -->
+  <!-- Badan bawah lambung (di bawah garis air) -->
+  <path d="M5,41 L5,49 Q28,54 55,48 L60,41 Z" fill="#1B3166"/>
+
+  <!-- Dek atas / main deck -->
+  <path d="M5,33 L58,33 L62,41 L5,41 Z" fill="#1E4D8C"/>
+  <!-- Highlight dek -->
+  <path d="M5,33 L58,33 L60,36 L5,36 Z" fill="#2A5BA0" opacity="0.6"/>
+
+  <!-- ===== BANGUNAN ATAS ===== -->
+  <!-- Bangunan utama (cabin) -->
+  <path d="M9,21 L40,21 L42,33 L7,33 Z" fill="#CBA87A"/>
+  <!-- Shadow bawah cabin -->
+  <path d="M7,31 L42,31 L42,33 L7,33 Z" fill="#A8875A" opacity="0.45"/>
+
+  <!-- Jendela kabin — baris bawah -->
+  <rect x="10" y="24" width="7" height="5" rx="1.2" fill="#48CAE4"/>
+  <rect x="19" y="24" width="7" height="5" rx="1.2" fill="#48CAE4"/>
+  <rect x="28" y="24" width="7" height="5" rx="1.2" fill="#48CAE4"/>
+
+  <!-- Bridge / anjungan atas -->
+  <path d="M13,13 L36,13 L38,21 L11,21 Z" fill="#B8956A"/>
+  <!-- Kaca bridge -->
+  <rect x="15" y="15" width="20" height="5" rx="1" fill="#48CAE4" opacity="0.65"/>
+
+  <!-- ===== ANTENA / TIANG ===== -->
+  <rect x="23" y="4"  width="2"  height="10" rx="0.8" fill="#374151"/>
+  <rect x="19" y="5"  width="10" height="1.5" rx="0.5" fill="#374151"/>
+  <circle cx="24" cy="4" r="1.2" fill="#6B7280"/>
+
+  <!-- ===== RAILING BURITAN ===== -->
+  <rect x="46" y="27" width="1.5" height="8" rx="0.5" fill="#94A3B8"/>
+  <rect x="50" y="27" width="1.5" height="8" rx="0.5" fill="#94A3B8"/>
+  <rect x="46" y="27" width="6"   height="1.5" rx="0.5" fill="#94A3B8"/>
+
+  <!-- ===== GARIS AIR / REFLEKSI ===== -->
+  <path d="M5,50 Q22,55 36,54 Q50,55 59,51"
+        stroke="#38BDF8" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+  <path d="M9,55 Q26,58 42,57 Q52,58 56,55"
+        stroke="#7DD3FC" stroke-width="1.4" fill="none" stroke-linecap="round"/>
 </svg>
